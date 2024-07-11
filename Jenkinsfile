@@ -4,9 +4,9 @@ pipeline{
         buildDiscarder(logRotator(numToKeepStr: '5'))
     }
     environment{
-        DOCKERHUB_CREDENTIALS = credentials('dockerhub')
+        DOCKERHUB_CREDENTIALS = credentials('DOCKERHUB_CREDENTIALS_GIZ')
         APP_NAME = 'webapplication'
-        USER_NAME=''
+        USER_NAME='gizachewgutu'
     }
     stages{
         stage('Build'){
