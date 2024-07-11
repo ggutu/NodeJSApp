@@ -26,7 +26,7 @@ pipeline{
         }
         stage('Run the image locally'){
             steps{
-               sh 'docker run -d -p 9000:3000 $USER_NAME/$APP_NAME'
+               sh 'docker run -d -p 8080:3000 $USER_NAME/$APP_NAME'
             }
         }
     }
