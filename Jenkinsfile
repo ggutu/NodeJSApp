@@ -26,7 +26,7 @@ pipeline{
         }
         stage('Run the image locally'){
             steps{
-               sh 'docker run --name node-app -d -p 5000:3000 $USER_NAME/$APP_NAME'
+               sh 'docker run -p 5000:3000 $USER_NAME/$APP_NAME'
             }
         }
     }
